@@ -1,0 +1,23 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "description": "Sandbox app to trial a variety of technology in a helloworld kind of way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/kriscov/sandbox.git"
+  },
+  "author": "Kris Coverdale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/kriscov/sandbox/issues"
+  },
+  "homepage": "https://gitlab.com/kriscov/sandbox#README",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

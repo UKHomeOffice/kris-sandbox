@@ -1,0 +1,13 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: kris-sandbox-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: kris-sandbox-service
+          servicePort: 80
+        path: /

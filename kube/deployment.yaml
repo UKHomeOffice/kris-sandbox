@@ -1,0 +1,18 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kris-sandbox
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: kris-sandbox
+    spec:
+      containers:
+      - name: kris-sandbox-nodejs
+        image: kris-sandbox:v1
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 8888
